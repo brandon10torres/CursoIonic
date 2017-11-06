@@ -1,0 +1,18 @@
+<h1 *ngIf="existo">Existo!</h1>
+
+<h1 *ngIf="!existo">No Existo!</h1>
+
+<button type="button"
+        class="btn btn-primary"
+        (click) = "existo = !existo">
+  Cambiar
+</button>
+<hr>
+
+<ul class="list-group">
+  <li class="list-group-item"
+      *ngFor="let marca of marcas; let i = index">
+      {{i+1}} {{marca}}
+  </li>
+
+</ul>
